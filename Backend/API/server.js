@@ -9,6 +9,13 @@ const gqlschema = require("./GraphqlSchema");
 //importing logger
 const serverLog = require('./logger');
 
+//importing routes
+const top_least_series = require('./Routes/TopAndLeastTimeSeries');
+const Exp_Index_Series = require('./Routes/ExpTimeSeriesAreawise');
+const allRes_TS = require('./Routes/AllResponseTimeSeries');
+const exp_till_date = require('./Routes/EXpTillDateTimeSeries');
+
+
 //importing db module
 const db =require('./db');
 const mongoose = require('mongoose');
@@ -44,6 +51,15 @@ app.use(helmet());
 
 //adding cross origin resource sharing (cors) support
 app.use(require('cors')());
+
+app.use(/*gateKeeper,*/ 
+       top_least_series,
+        Exp_Index_Series ,
+        allRes_TS ,
+       exp_till_date
+     
+        
+       );
 
 //checking connection to DB
 db.connect((err) => {

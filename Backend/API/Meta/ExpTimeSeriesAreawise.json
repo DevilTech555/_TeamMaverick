@@ -1,0 +1,64 @@
+{
+ 
+  "ExpTS":{
+    
+    "series": [
+      {
+        "name": "",
+        "data": []
+      }
+    
+    ],
+    "chart": {
+      "type": "line",
+      "toolbar": {
+        "show": true
+      }
+    },
+   "colors":["#9C27B0"],
+    "stroke": {
+      "curve": "smooth"
+    },
+    "title": {
+      "text": "Experience Index Timeseries",
+      "align": "left"
+    },
+   
+    "markers": {
+      "size": [1,1],
+      "shape": "circle"
+    },
+    "xaxis": {
+      "type": "datetime",
+     
+      "title":{ 
+        "text":"Dates",
+        "offsetY":6
+      }
+    },
+    "yaxis": {
+      "title": {
+        "text": "Experience Index"
+      }
+     
+    },
+    "dataLabels": {
+      "enabled": false
+    },
+    "tooltip": {
+      "enabled": true,
+     
+      "y": {
+        "formatter": null
+      }
+    },
+    "legend": {
+      "position": "bottom",
+      "horizontalAlign": "center",
+      "floating": false,
+      "offsetY": 5,
+      "offsetX": -5
+    }
+  }
+ 
+}
