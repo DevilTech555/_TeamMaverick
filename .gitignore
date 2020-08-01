@@ -1,7 +1,7 @@
 /Backend/API/node_modules
 /Backend/API/.env
 /Backend/Cleanup/.env
-/Backend/server.log
+/Backend/API/server.log
 
 # dependencies
 /frontend/node_modules
