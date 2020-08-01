@@ -23,5 +23,5 @@ html
                 return `${val}(${area.topArea[dataPointIndex]})`;
         };
         console.log(options.dataLabels.offsetX);
-        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        var chart = new ApexCharts(document.getElementById("chart"), options);
         chart.render();

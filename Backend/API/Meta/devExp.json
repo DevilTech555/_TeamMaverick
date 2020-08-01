@@ -16,9 +16,7 @@
         "type":"bar",
         "height":700
     },
-    "theme":{
-        "mode":"dark"
-      },
+   
     "legend":{
         "show":true,
         "position": "bottom",

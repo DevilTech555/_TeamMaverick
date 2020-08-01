@@ -1,5 +1,4 @@
-{ "donut":
-    {
+{ 
     "series": [],
     "chart": {
         "type": "donut", 
@@ -50,4 +49,3 @@
   }
 }
     
-}

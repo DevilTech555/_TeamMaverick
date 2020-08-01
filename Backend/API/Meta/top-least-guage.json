@@ -1,12 +1,10 @@
 {
     "series":[],
     "chart":{
-        "type":"radialBar",
-        "height":225
+        "type":"radialBar"
+       
     },
-    "theme":{
-        "mode":"dark"
-      },
+   
     "plotOptions":{
         "radialBar":{
             "startAngle":-175,
@@ -14,7 +12,7 @@
             "hollow":{
                 "margin":0,
                 "size":"60%",
-                "background":"#424242",
+                "background":"#fff",
                 "position":"front",
                 "dropShadow":{
                     "enabled":true,
@@ -25,7 +23,7 @@
                 }
             },
             "track":{
-                "background":"#767676",
+                "background":"#fff",
                 "strokeWidth":"67%",
                 "margin":0,
                 "dropShadow":{
@@ -41,12 +39,12 @@
                 "name":{
                     "offsetY":-10,
                     "show":true,
-                    "color":"#fff",
-                    "fontSize":"7vw"
+                    "color":"#000",
+                    "fontSize":"3vw"
                 },
                 "value":{
-                    "color":"#fff",
-                    "fontSize":"7vw",
+                    "color":"#000",
+                    "fontSize":"3vw",
                     "show":true
                 }
             }
@@ -65,7 +63,7 @@
         "align":"left",
         "margin":10,
         "style":{
-            "fontSize":"11pt"
+            "fontSize":"16pt"
         }
       },
       "dataLabels": {
@@ -73,12 +71,12 @@
         "name": {
           "offsetY": -10,
           "show": true,
-          "color": "#888",
-          "fontSize": "22px"
+          "color": "#111",
+          "fontSize": "18px"
         },
         "value": {
           "color": "#111",
-          "fontSize": "22px",
+          "fontSize": "18px",
           "show": true
         }
       }

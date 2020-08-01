@@ -9,5 +9,5 @@ html
     script.
         var options = !{option};
         options.plotOptions.radialBar.dataLabels.value.formatter = function (val){return parseInt(val)};
-        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        var chart = new ApexCharts(document.getElementById("chart"), options);
         chart.render();

@@ -1,5 +1,5 @@
 {
-    "top_least":{
+    
     "series": [
         {
           "data": []
@@ -24,9 +24,7 @@
               "fontSize":"14px"
           }
         },
-        "theme":{
-          "mode":"dark"
-        },
+        
       "plotOptions": {
         "bar": {
           "horizontal": true,
@@ -37,7 +35,7 @@
       },
       "dataLabels": {
         "enabled": true,
-        "offsetX": -6,
+        
         "style": {
           "fontSize": "10px",
           "colors": ["#fff"]
@@ -68,5 +66,5 @@
 }
     
    
-  }
+  
   

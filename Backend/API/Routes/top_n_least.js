@@ -6,7 +6,7 @@ const router = express.Router();
 const serverLog = require('../logger');
 
 //importing chart option skeleton
-const top_least = require("../Meta/top_n_least.json");
+const custom_group = require("../Meta/top_n_least.json");
 
 //importing DB module
 const db = require("../db");
@@ -88,18 +88,18 @@ router.get("/:air/top_and_least/", (req, res) => {
           );
           for (let i = 0; i < 3; i++) {
             if (topData[i] < 10.0 || leastData[i] < 10.0) {
-              top_least.dataLabels.offsetX = 36;
-              top_least.dataLabels.style.colors = ["#FFF"];
+              custom_group.dataLabels.offsetX = 36;
+              custom_group.dataLabels.style.colors = ["#FFF"];
               break;
             }
           }
           categories.push("By Device", "By Survey", "By Group");
-          top_least.series = series;
-          top_least.xaxis.categories = categories;
+          custom_group.series = series;
+          custom_group.xaxis.categories = categories;
           //console.log(topData, leastData);
 
-          res.status(200).render("chart_top_least", {
-            option: JSON.stringify(top_least),
+          res.status(200).render("chart_custom_group", {
+            option: JSON.stringify(custom_group),
             area: JSON.stringify({ leastArea: leastArea, topArea: topArea }),
           });
         }

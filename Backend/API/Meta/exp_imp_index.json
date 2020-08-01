@@ -4,9 +4,7 @@
     "type": "bar",
     "height": 430
   },
-  "theme":{
-    "mode":"dark"
-  },
+ 
   "colors":["#fb7756","#f7af08"],
   "plotOptions": {
     "bar": {

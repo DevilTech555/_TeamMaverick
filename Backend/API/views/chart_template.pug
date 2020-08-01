@@ -8,5 +8,5 @@ html
         div(id='chart',style="max-width:device-width")
     script.
         var options = !{option};
-        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        var chart = new ApexCharts(document.getElementById("chart"), options);
         chart.render();
