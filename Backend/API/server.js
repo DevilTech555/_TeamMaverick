@@ -9,6 +9,9 @@ const gqlschema = require("./GraphqlSchema");
 //importing logger
 const serverLog = require('./logger');
 
+//Importing routes
+const res_dyn = require('./Routes/res_dyn');
+
 //importing db module
 const db =require('./db');
 const mongoose = require('mongoose');
@@ -61,6 +64,8 @@ app.use('/graphql',graphqlHTTP({
     schema: gqlschema,
     graphiql: true
 }));
+
+app.use(res_dyn);
 
 //starting server  
 app.listen(PORT,()=>{

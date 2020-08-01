@@ -1,0 +1,12 @@
+2020-08-01T14:08:08+05:30@info: server listening on http://localhost:4000
+2020-08-01T14:08:10+05:30@error: Unable to connect to AirportDB -> MongoError: Authentication failed.
+2020-08-01T14:08:36+05:30@info: server listening on http://localhost:4000
+2020-08-01T14:09:44+05:30@info: server listening on http://localhost:4000
+2020-08-01T14:09:46+05:30@error: Unable to connect to AirportDB -> MongoError: Authentication failed.
+2020-08-01T14:12:51+05:30@info: server listening on http://localhost:4000
+2020-08-01T14:13:02+05:30@info: server listening on http://localhost:4000
+2020-08-01T14:13:04+05:30@info: Auth Database is online.
+2020-08-01T14:13:05+05:30@error: Unable to connect to AirportDB -> MongoError: Authentication failed.
+2020-08-01T14:16:35+05:30@info: server listening on http://localhost:4000
+2020-08-01T14:16:37+05:30@info: Auth Database is online.
+2020-08-01T14:16:39+05:30@info: Airport Database is online.
