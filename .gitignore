@@ -1,5 +1,6 @@
 /Backend/API/node_modules
 /Backend/API/.env
+/Backend/server.log
 
 # dependencies
 /frontend/node_modules

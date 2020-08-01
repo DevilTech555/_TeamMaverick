@@ -2,11 +2,16 @@
 const express = require('express');
 const app = express();
 
+//importing graphql modules and schema
+const {graphqlHTTP} = require('express-graphql');
+const gqlschema = require("./GraphqlSchema");
+
 //importing logger
-const serverlog = require('./logger');
+const serverLog = require('./logger');
 
 //importing db module
 const db =require('./db');
+const mongoose = require('mongoose');
 
 //setting server port
 const PORT = 4000;
@@ -26,7 +31,7 @@ app.set("view cache", true);
 app.use(express.static('./Public'));
 
 //adding helmet security middleware
-app.use(helmet);
+app.use(helmet());
 
 //adding cross origin resource sharing (cors) support
 app.use(require('cors')());
@@ -51,7 +56,13 @@ mongoose.connect(`mongodb+srv://${process.env.UNAME}:${process.env.PASS}@cluster
     }
   });  
 
+//setting up graphql API route
+app.use('/graphql',graphqlHTTP({
+    schema: gqlschema,
+    graphiql: true
+}));
+
 //starting server  
 app.listen(PORT,()=>{
-    serverlog.info(`server listening on http://localhost:${PORT}`);
+    serverLog.info(`server listening on http://localhost:${PORT}`);
 });

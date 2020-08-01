@@ -2,7 +2,7 @@
 const MongoClient = require("mongodb").MongoClient;
 
 //database connection uri
-const uri = `mongodb+srv://${process.env.UNAME}:${process.env.PASS}@aai.5wmq1.gcp.mongodb.net/AirportDB?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${process.env.UNAME}:${process.env.PASS}@cluster0-qkpve.mongodb.net/AirportDB?retryWrites=true&w=majority`;
 
 // Options for mongoDB
 const mongoOptions = { useNewUrlParser : true, useUnifiedTopology: true };
