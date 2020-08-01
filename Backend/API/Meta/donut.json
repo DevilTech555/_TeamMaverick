@@ -1,0 +1,53 @@
+{ "donut":
+    {
+    "series": [],
+    "chart": {
+        "type": "donut", 
+        "toolbar":{
+          "show":true
+        }
+    },
+    "colors": ["#25aedb", "#00b300", "#FFFF00", "#FF722F","#e53434"],
+    "theme":{
+      "mode":"dark"
+    },
+    "title": {
+        "text": "All Responses",
+        "align": "left",
+        "floating": true
+      }, 
+      "tooltip":{
+        "theme":"dark"
+      },       
+   
+    "plotOptions": {
+        "pie": {
+          "donut": {
+            "labels": {
+              "show": true,              
+                "style":{
+                  "color":"#000"
+                }
+              },
+                "total": {
+                "showAlways": true,
+                "show": true
+              }
+            }
+          },
+        "dataLabels": {
+          "offset": 10,
+          "minAngleToShowLabel": 10,  
+          " dropShadow": {
+            "enabled": false
+          }          
+      }
+      },   
+
+  "legend": {
+    "position": "bottom",
+    "horizontalAlign": "center"
+  }
+}
+    
+}

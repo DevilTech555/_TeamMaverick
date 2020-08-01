@@ -1,0 +1,72 @@
+{
+    "top_least":{
+    "series": [
+        {
+          "data": []
+        },
+        {
+          "data": []
+        }
+      ], 
+      "chart": {
+        "type": "bar",
+        "height": 430,
+        "toolbar":{
+          "show":true
+        }
+      },
+      "colors": ["#c7417b", "#46ce8c"],    
+      "title": {
+          "text": "Top and Least Area",
+          "align": "left",
+          "floating": true,
+          "style":{
+              "fontSize":"14px"
+          }
+        },
+        "theme":{
+          "mode":"dark"
+        },
+      "plotOptions": {
+        "bar": {
+          "horizontal": true,
+          "dataLabels": {
+            "position": "top"
+          }
+        }
+      },
+      "dataLabels": {
+        "enabled": true,
+        "offsetX": -6,
+        "style": {
+          "fontSize": "10px",
+          "colors": ["#fff"]
+        }
+      },
+      "tooltip": {
+        "enabled": true,
+        "theme":"dark",
+        "y": {
+          "formatter": null
+        }
+      },
+      "stroke": {
+        "show": true,
+        "width": 1,
+        "colors": ["#fff"]
+      },
+      "xaxis": {
+        "categories": []
+      },
+      "legend": {
+        "onItemHover": {
+          "highlightDataSeries": true
+        },
+        "position": "bottom",
+        "horizontalAlign": "center"
+      }
+}
+    
+   
+  }
+  
