@@ -22,6 +22,15 @@ const helmet = require('helmet');
 //enabling .env file
 require('dotenv').config();
 
+//importing routes
+const exp_chart = require('./Routes/exp_imp_index');
+const donut = require('./Routes/donut');
+const top_least = require('./Routes/top_n_least');
+const devexp = require('./Routes/devExp');
+const top_least_guage = require('./Routes/top_least_gauge');
+const heatmap = require('./Routes/resp_heatmap');
+
+
 //setting view engine
 app.set("views", "./views");
 app.set("view engine", "pug");
@@ -61,6 +70,16 @@ app.use('/graphql',graphqlHTTP({
     schema: gqlschema,
     graphiql: true
 }));
+app.use(
+ exp_chart,
+  donut,
+  top_least,  
+  devexp,
+  heatmap,
+  top_least_guage,  
+ );
+
+
 
 //starting server  
 app.listen(PORT,()=>{

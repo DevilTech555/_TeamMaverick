@@ -1,0 +1,154 @@
+2020-08-01T15:37:53+05:30@info: server listening on http://localhost:4000
+2020-08-01T15:37:54+05:30@info: Auth Database is online.
+2020-08-01T15:37:55+05:30@info: Airport Database is online.
+2020-08-01T15:42:32+05:30@info: REQUESTED Response donut chart requested with Airport=Kolkata, Date=2020-09-08, Type=Taxi
+2020-08-01T15:42:36+05:30@info: REQUESTED Response donut chart requested with Airport=Kolkata, Date=2020-09-08, Type=Taxi
+2020-08-01T15:44:24+05:30@info: server listening on http://localhost:4000
+2020-08-01T15:44:26+05:30@info: Auth Database is online.
+2020-08-01T15:44:26+05:30@info: Airport Database is online.
+2020-08-01T15:44:35+05:30@info: REQUESTED Response donut chart requested with Airport=Kolkata, Date=2020-09-08, Type=Taxi
+2020-08-01T15:44:38+05:30@info: REQUESTED Response donut chart requested with Airport=Kolkata, Date=2020-09-08, Type=Taxi
+2020-08-01T15:45:08+05:30@info: server listening on http://localhost:4000
+2020-08-01T15:45:09+05:30@info: Auth Database is online.
+2020-08-01T15:45:10+05:30@info: Airport Database is online.
+2020-08-01T15:45:12+05:30@info: REQUESTED Response donut chart requested with Airport=Kolkata, Date=2020-09-08, Type=Taxi
+2020-08-01T15:45:15+05:30@info: REQUESTED Response donut chart requested with Airport=Kolkata, Date=2020-09-08, Type=Taxi
+2020-08-01T15:46:08+05:30@info: REQUESTED Response donut chart requested with Airport=Kolkata, Date=2020-09-08, Type=Taxi
+2020-08-01T15:46:50+05:30@info: REQUESTED Response donut chart requested with Airport=Kolkata, Date=2020-09-08, Type=Taxi
+2020-08-01T15:52:25+05:30@info: server listening on http://localhost:4000
+2020-08-01T15:52:26+05:30@info: Auth Database is online.
+2020-08-01T15:52:27+05:30@info: Airport Database is online.
+2020-08-01T15:52:28+05:30@info: REQUESTED Response donut chart requested with Airport=Kolkata, Date=2020-09-08, Type=Taxi
+2020-08-01T15:54:40+05:30@info: server listening on http://localhost:4000
+2020-08-01T15:54:42+05:30@info: Auth Database is online.
+2020-08-01T15:54:42+05:30@info: Airport Database is online.
+2020-08-01T15:54:43+05:30@info: REQUESTED Response donut chart requested with Airport=Kolkata, Date=2020-09-08, Type=Taxi
+2020-08-01T15:56:04+05:30@info: REQUESTED Top and Least chart with Airport=Kolkata, Date=2020-08-08, Type=ATM
+2020-08-01T16:00:41+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:00:42+05:30@info: Auth Database is online.
+2020-08-01T16:00:43+05:30@info: Airport Database is online.
+2020-08-01T16:01:51+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:01:52+05:30@info: Auth Database is online.
+2020-08-01T16:01:53+05:30@info: Airport Database is online.
+2020-08-01T16:01:54+05:30@info: REQUESTED Top and Least chart with Airport=Kolkata, Date=2020-08-08, Type=ATM
+2020-08-01T16:02:41+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:02:42+05:30@info: Auth Database is online.
+2020-08-01T16:02:43+05:30@info: Airport Database is online.
+2020-08-01T16:02:44+05:30@info: REQUESTED Top and Least chart with Airport=Kolkata, Date=2020-08-08, Type=ATM
+2020-08-01T16:02:48+05:30@info: REQUESTED Top and Least chart with Airport=Kolkata, Date=2020-08-08, Type=ATM
+2020-08-01T16:03:20+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:03:21+05:30@info: Auth Database is online.
+2020-08-01T16:03:22+05:30@info: Airport Database is online.
+2020-08-01T16:03:29+05:30@info: REQUESTED Top and Least chart with Airport=Kolkata, Date=2020-08-08, Type=ATM
+2020-08-01T16:06:03+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:06:05+05:30@info: Auth Database is online.
+2020-08-01T16:06:06+05:30@info: Airport Database is online.
+2020-08-01T16:06:08+05:30@info: REQUESTED Top and Least chart with Airport=Kolkata, Date=2020-08-08, Type=ATM
+2020-08-01T16:06:56+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:06:58+05:30@info: Auth Database is online.
+2020-08-01T16:06:59+05:30@info: Airport Database is online.
+2020-08-01T16:07:00+05:30@info: REQUESTED Top and Least chart with Airport=Kolkata, Date=2020-08-08, Type=ATM
+2020-08-01T16:10:35+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:10:37+05:30@info: Auth Database is online.
+2020-08-01T16:10:38+05:30@info: Airport Database is online.
+2020-08-01T16:11:36+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:11:37+05:30@info: Auth Database is online.
+2020-08-01T16:11:38+05:30@info: Airport Database is online.
+2020-08-01T16:13:35+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:13:36+05:30@info: Auth Database is online.
+2020-08-01T16:13:37+05:30@info: Airport Database is online.
+2020-08-01T16:13:46+05:30@info: REQUESTED Heat map series chart with Airport=Kolkata, Section=by_device, SDate=2020-09-08, EDate=2020-09-27
+2020-08-01T16:15:30+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:15:31+05:30@info: Auth Database is online.
+2020-08-01T16:15:32+05:30@info: Airport Database is online.
+2020-08-01T16:16:38+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:16:39+05:30@info: Auth Database is online.
+2020-08-01T16:16:40+05:30@info: Airport Database is online.
+2020-08-01T16:16:52+05:30@info: REQUESTED Heat map series chart with Airport=Kolkata, Section=undefined, SDate=2020-09-08, EDate=2020-09-27
+2020-08-01T16:20:15+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:20:16+05:30@info: Auth Database is online.
+2020-08-01T16:20:17+05:30@info: Airport Database is online.
+2020-08-01T16:20:22+05:30@info: REQUESTED Heat map series chart with Airport=Kolkata, Section=undefined, SDate=2020-09-08, EDate=2020-09-27
+2020-08-01T16:22:14+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:22:16+05:30@info: Auth Database is online.
+2020-08-01T16:22:17+05:30@info: Airport Database is online.
+2020-08-01T16:22:20+05:30@info: REQUESTED Heat map series chart with Airport=Kolkata, Section=undefined, SDate=2020-09-08, EDate=2020-09-27
+2020-08-01T16:22:58+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:23:00+05:30@info: Auth Database is online.
+2020-08-01T16:23:00+05:30@info: Airport Database is online.
+2020-08-01T16:23:01+05:30@info: REQUESTED Heat map series chart with Airport=Kolkata, Section=undefined, SDate=2020-09-08, EDate=2020-09-27
+2020-08-01T16:24:38+05:30@info: Requested top-least-guage  chart with Airport=Kolkata, Type=maxExp, Date=2020-09-08
+2020-08-01T16:25:21+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:25:22+05:30@info: Auth Database is online.
+2020-08-01T16:25:23+05:30@info: Airport Database is online.
+2020-08-01T16:25:37+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:25:38+05:30@info: Auth Database is online.
+2020-08-01T16:25:39+05:30@info: Airport Database is online.
+2020-08-01T16:25:46+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:25:47+05:30@info: Auth Database is online.
+2020-08-01T16:25:48+05:30@info: Airport Database is online.
+2020-08-01T16:25:54+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:25:55+05:30@info: Auth Database is online.
+2020-08-01T16:25:56+05:30@info: Airport Database is online.
+2020-08-01T16:26:15+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:26:17+05:30@info: Auth Database is online.
+2020-08-01T16:26:17+05:30@info: Airport Database is online.
+2020-08-01T16:26:24+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:26:26+05:30@info: Auth Database is online.
+2020-08-01T16:26:26+05:30@info: Airport Database is online.
+2020-08-01T16:26:27+05:30@info: Requested top-least-guage  chart with Airport=Kolkata, Type=maxExp, Date=2020-09-08
+2020-08-01T16:26:56+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:26:58+05:30@info: Auth Database is online.
+2020-08-01T16:26:59+05:30@info: Airport Database is online.
+2020-08-01T16:27:03+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:27:05+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:27:06+05:30@info: Auth Database is online.
+2020-08-01T16:27:07+05:30@info: Airport Database is online.
+2020-08-01T16:27:15+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:27:17+05:30@info: Auth Database is online.
+2020-08-01T16:27:17+05:30@info: Airport Database is online.
+2020-08-01T16:27:21+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:27:22+05:30@info: Auth Database is online.
+2020-08-01T16:27:22+05:30@info: Requested top-least-guage  chart with Airport=Kolkata, Type=maxExp, Date=2020-09-08
+2020-08-01T16:27:23+05:30@info: Airport Database is online.
+2020-08-01T16:27:53+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:27:54+05:30@info: Auth Database is online.
+2020-08-01T16:27:55+05:30@info: Airport Database is online.
+2020-08-01T16:27:57+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:27:58+05:30@info: Auth Database is online.
+2020-08-01T16:27:59+05:30@info: Airport Database is online.
+2020-08-01T16:28:03+05:30@info: Requested top-least-guage  chart with Airport=Kolkata, Type=maxExp, Date=2020-09-08
+2020-08-01T16:30:55+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:30:56+05:30@info: Auth Database is online.
+2020-08-01T16:30:57+05:30@info: Airport Database is online.
+2020-08-01T16:32:02+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:32:04+05:30@info: Auth Database is online.
+2020-08-01T16:32:04+05:30@info: Airport Database is online.
+2020-08-01T16:33:14+05:30@info: Requested top-least-guage  chart with Airport=Kolkata, Type=minExp, Date=2020-09-08
+2020-08-01T16:33:35+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:33:36+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:33:39+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:33:40+05:30@info: Auth Database is online.
+2020-08-01T16:33:41+05:30@info: Airport Database is online.
+2020-08-01T16:33:44+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:33:46+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:33:47+05:30@info: Auth Database is online.
+2020-08-01T16:33:48+05:30@info: Airport Database is online.
+2020-08-01T16:33:58+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:33:59+05:30@info: Auth Database is online.
+2020-08-01T16:34:00+05:30@info: Airport Database is online.
+2020-08-01T16:34:04+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:34:05+05:30@info: Requested top-least-guage  chart with Airport=Kolkata, Type=minExp, Date=2020-09-08
+2020-08-01T16:34:05+05:30@info: Auth Database is online.
+2020-08-01T16:34:06+05:30@info: Airport Database is online.
+2020-08-01T16:35:20+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:35:22+05:30@info: Auth Database is online.
+2020-08-01T16:35:23+05:30@info: Airport Database is online.
+2020-08-01T16:35:40+05:30@info: Requested top-least-guage  chart with Airport=Kolkata, Type=maxExp, Date=2020-09-08
+2020-08-01T16:35:52+05:30@info: Requested top-least-guage  chart with Airport=Kolkata, Type=minExp, Date=2020-09-08
+2020-08-01T16:37:23+05:30@info: server listening on http://localhost:4000
+2020-08-01T16:37:25+05:30@info: Requested top-least-guage  chart with Airport=Kolkata, Type=minExp, Date=2020-09-08
+2020-08-01T16:37:25+05:30@info: Auth Database is online.
+2020-08-01T16:37:25+05:30@info: Airport Database is online.
+2020-08-01T16:37:32+05:30@info: Requested top-least-guage  chart with Airport=Kolkata, Type=minExp, Date=2020-09-08
+2020-08-01T16:37:50+05:30@info: Requested top-least-guage  chart with Airport=Kolkata, Type=maxExp, Date=2020-09-08
