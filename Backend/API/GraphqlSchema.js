@@ -8,6 +8,8 @@ const {GraphQLSchema,
        GraphQLNonNull
 } = require('graphql');
 
+const serverLog = require('./logger');
+
 require('dotenv').config();
 
 //importing db module
@@ -199,7 +201,77 @@ const rootQueryType = new GraphQLObjectType({
                         .catch((err)=> console.log(err));
                 return res;        
             }
+        },
+        res_donut:{
+            type: new GraphQLList(GraphQLInt),
+            args:{
+                air:{type: new GraphQLNonNull(GraphQLString)},
+                date:{type: new GraphQLNonNull(GraphQLString)},
+                type:{type: new GraphQLNonNull(GraphQLString)}
+            },
+            async resolve(parent,args){
+                let res=[];
+                await db.getDB()
+                        .collection(args.air)
+                        .findOne({date:args.date, type:args.type},{projection:{_id: 0, ["general.all_responses"]:1}})
+                        .then((doc)=>{
+                            res.push(doc.general.all_responses[0].Excellent);
+                            res.push(doc.general.all_responses[0].Good);
+                            res.push(doc.general.all_responses[0].Average);
+                            res.push(doc.general.all_responses[0].Poor);
+                            res.push(doc.general.all_responses[0].Bad);
+                            serverLog.info(`GraphQL: res_donut Requested with air=${args.air}, type=${args.type}, date=${args.date}.`);
+
+                        })
+                        .catch((err)=>{
+                            serverLog.error(`GraphQL: res_donut Failed with air=${args.air}, type=${args.type}, date=${args.date} => ${err}`);
+                        })
+                return res;        
+            }
+        },
+        dev_exp:{
+            type: new GraphQLObjectType({
+                name:'dev_exp',
+                fields:{
+                    data:{type: new GraphQLList(GraphQLFloat)},
+                    names:{type: new GraphQLList(GraphQLString)}
+                }
+            }),
+            args:{
+                air:{type: new GraphQLNonNull(GraphQLString)},
+                date:{type: new GraphQLNonNull(GraphQLString)}
+            },
+            async resolve(parent,args){
+                let res={
+                    data:[],
+                    names:[]
+                };
+                 await db.getDB()
+                         .collection(args.air)
+                         .find({date: args.date},{projection:{ _id:0, type:1, 'general.avg_exp_index':1}})
+                         .toArray()
+                         .then((docs)=>{
+                            docs.forEach(element => {
+                                res.data.push(element.general.avg_exp_index);
+                                res.names.push(element.type);
+                            });
+                            serverLog.info(`GraphQL: dev_exp Requested with air=${args.air}, date=${args.date}.`);
+                         })
+                         .catch((err)=>{
+                            serverLog.error(`GraphQL: dev_exp Failed with air=${args.air}, date=${args.date} => ${err}`);
+                         });
+                return res;         
+            }
+        },
+        exp_imp:{
+            type: new GraphQLObjectType({
+
+            }),
+            args:{
+                
+            }
         }
+
     }
 });
 
