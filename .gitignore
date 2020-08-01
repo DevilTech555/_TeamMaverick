@@ -1,5 +1,5 @@
 /Backend/API/node_modules
-
+/Backend/API/.env
 
 # dependencies
 /frontend/node_modules
