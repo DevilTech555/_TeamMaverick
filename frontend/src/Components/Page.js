@@ -4,6 +4,7 @@ import { Grid,
 	Paper,
 	Typography
 } from '@material-ui/core';
+import HeatMap from "./Charts/HeatMap";
 
 const useStyles = makeStyles((theme) => ({
 	
@@ -18,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     paper_lg:{
         margin: theme.spacing(1),
         width: '98%',
-        height:'60%',
+        height:'70%',
 
     },
      sticky:{
@@ -45,6 +46,7 @@ export default function Page() {
                 
                 <Grid item xs={6}>
                 <Paper elevation={3} className={classes.paper_lg}>
+                <HeatMap/>
                 </Paper>
                 </Grid>
                 <Grid item xs={6}>
