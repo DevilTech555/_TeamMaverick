@@ -5,6 +5,7 @@ import { Grid,
 	Typography
 } from '@material-ui/core';
 import HeatMap from "./Charts/HeatMap";
+import Line from "./Charts/line";
 
 const useStyles = makeStyles((theme) => ({
 	
@@ -51,7 +52,7 @@ export default function Page() {
                 </Grid>
                 <Grid item xs={6}>
                  <Paper elevation={3} className={classes.paper_lg}>
-                          
+                     <Line/>     
                  </Paper>
                  </Grid>
                
