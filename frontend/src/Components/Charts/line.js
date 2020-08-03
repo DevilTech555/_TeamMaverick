@@ -106,12 +106,8 @@ export default class Line extends Component {
           yaxis: {
             min: -10,
             max: 40,
-
             title: {
-              text: 'Engagement',
-              style:{
-                  color:"#fff"
-              }
+              text: 'Engagement'
             },
           }
         },
