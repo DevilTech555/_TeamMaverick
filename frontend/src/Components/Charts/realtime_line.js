@@ -1,6 +1,6 @@
  import React, { Component } from 'react';
  import Chart from 'react-apexcharts';
- import ApexCharts from 'apexcharts'
+ 
   export default  class Realtime extends Component {
     constructor(props) {
       super(props);

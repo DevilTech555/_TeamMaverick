@@ -4,18 +4,11 @@ import { AppBar,
          Toolbar,
          Typography,
          IconButton,
-         InputBase,
          Badge 
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import AccountCircle from '@material-ui/icons/AccountCircle';
-
-
-
-
-
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -128,21 +121,8 @@ export default function SimpleAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Dashboard
+            Airport
           </Typography>
-          <div className={classes.search}>
-            <div className={classes.searchIcon}>
-              <SearchIcon />
-            </div>
-            <InputBase
-              placeholder="Search…"
-              classes={{
-                root: classes.inputRoot,
-                input: classes.inputInput,
-              }}
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </div>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             <IconButton aria-label="show 17 new notifications" color="inherit">
