@@ -5,34 +5,56 @@ const ENDPOINT = "http://localhost:8080/";
 // import ApexCharts from 'apexcharts'
 export default class Line extends Component {
 
-   getter = async ()=>{
-      await fetch('http://localhost:5000/',{method:'GET'})
-      .then((res)=> res.json())
-      .then(async (doc)=>{
-         console.log(doc)
-         let newseries = []
-         let prediciton ={
-            name:'prediction',
-            data:[]
-          }
-          let demand = {
-            name:'demand',
-            data:[]
-          }
-          doc.data.map(element=>{
-          prediciton.data.push([element.timestamp,Math.round(element.yhat)]);
-          demand.data.push([element.timestamp],element.no_of_pass);
-       });
-        newseries.push(prediciton);
-        newseries.push(demand);
-        console.log(newseries);
-        this.setState({series:newseries},()=>{
-          console.log(this.state);
-        });
+  //  getter = async ()=>{
+  //     await fetch('http://localhost:5000/',{method:'GET'})
+  //     .then((res)=> res.json())
+  //     .then(async (doc)=>{
+  //        console.log(doc)
+  //        let newseries = []
+  //        let prediciton ={
+  //           name:'prediction',
+  //           data:[]
+  //         }
+  //         let demand = {
+  //           name:'demand',
+  //           data:[]
+  //         }
+  //         doc.data.map(element=>{
+  //         prediciton.data.push([element.timestamp,Math.round(element.yhat)]);
+  //         demand.data.push([element.timestamp],element.no_of_pass);
+  //      });
+  //       newseries.push(prediciton);
+  //       newseries.push(demand);
+  //       console.log(newseries);
+  //       this.setState({series:newseries},()=>{
+  //         console.log(this.state);
+  //       });
 
-      })
-      .catch((err)=> console.log(err))
-    }
+  //     })
+  //     .catch((err)=> console.log(err))
+  //   }
+  getData = async ()=>{
+    let rawData = await fetch('http://localhost:5000/')
+    let data = await rawData.json()
+    console.log(data);
+    let newseries = []
+    let prediciton ={
+       name:'prediction',
+       data:[]
+     }
+     let demand = {
+       name:'demand',
+       data:[]
+     }
+     data.data.map(element=>{
+     prediciton.data.push([element.timestamp,Math.round(element.yhat)]);
+     demand.data.push([element.timestamp,element.no_of_pass]);
+  });
+   newseries.push(prediciton);
+   newseries.push(demand);
+   console.log(newseries);
+   this.setState({series:newseries},()=>console.log(this.state));
+}
     constructor(props) {
       super(props);
 
@@ -66,7 +88,7 @@ export default class Line extends Component {
             type: 'gradient',
             gradient: {
               shade: 'dark',
-              gradientToColors: [ '#FDD835'],
+              gradientToColors: ['#FDD835'],
               shadeIntensity: 1,
               type: 'horizontal',
               opacityFrom: 1,
@@ -76,7 +98,7 @@ export default class Line extends Component {
           },
           markers: {
             size: 4,
-            colors: "#fff",        
+            colors: ["#ffff"],        
              hover: {
               size: 7,
             }
@@ -84,7 +106,7 @@ export default class Line extends Component {
           yaxis: {
             min: -10,
             max: 40,
-            color:"#fff",
+
             title: {
               text: 'Engagement',
               style:{
@@ -94,7 +116,10 @@ export default class Line extends Component {
           }
         },
       };  
-      this.getter();
+    }
+
+    componentDidMount(){
+      this.getData();
     }
 
 
