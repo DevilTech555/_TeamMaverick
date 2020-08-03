@@ -42,6 +42,9 @@ import '../../index.css';
               chart: {
                 height: 350,
                 type: 'heatmap',
+                toolbar: {
+                  show: false
+              }
               },
               plotOptions: {
                 heatmap: {
@@ -69,9 +72,6 @@ import '../../index.css';
               dataLabels: {
                 enabled: false
               },
-              toolbar: {
-        show: false
-      },
               theme:{
                 mode:'dark'
               },
