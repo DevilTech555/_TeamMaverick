@@ -1,17 +1,13 @@
 import React from 'react';
-import clsx from 'clsx';
 import { makeStyles, fade } from '@material-ui/core/styles';
-import { Drawer,
-         AppBar,
+import { AppBar,
          Toolbar,
          Typography,
          IconButton,
-         Divider,
          InputBase,
          Badge 
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import SearchIcon from '@material-ui/icons/Search';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import AccountCircle from '@material-ui/icons/AccountCircle';
@@ -19,7 +15,7 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 
 
 
-const drawerWidth = 280;
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -41,44 +37,14 @@ const useStyles = makeStyles((theme) => ({
       duration: theme.transitions.duration.leavingScreen,
     }),
   },
-  appBarShift: {
-    marginLeft: drawerWidth,
-    width: `calc(100% - ${drawerWidth}px)`,
-    transition: theme.transitions.create(['width', 'margin'], {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
-  },
+ 
   menuButton: {
     marginRight: 36,
   },
   hide: {
     display: 'none',
   },
-  drawer: {
-    width: drawerWidth,
-    flexShrink: 0,
-    whiteSpace: 'nowrap',
-  },
-  drawerOpen: {
-    width: drawerWidth,
-    transition: theme.transitions.create('width', {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
-  },
-  drawerClose: {
-    transition: theme.transitions.create('width', {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
-    }),
-    overflowX: 'hidden',
-    width: theme.spacing(7) + 1,
-    [theme.breakpoints.up('sm')]: {
-      width: theme.spacing(9) + 1,
-    },
-  },
-  toolbar: {
+   toolbar: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'flex-end',
@@ -195,28 +161,7 @@ export default function SimpleAppBar() {
           </div>
         </Toolbar>
       </AppBar>
-          <Drawer
-            variant="permanent"
-            className={clsx(classes.drawer, {
-            [classes.drawerOpen]: open,
-            [classes.drawerClose]: !open,
-            })}
-            classes={{
-              paper: clsx({
-              [classes.drawerOpen]: open,
-              [classes.drawerClose]: !open,
-              }),
-            }}
-          > 
-          <div className={classes.toolbar}>
-            <Typography variant="h6" noWrap align="center" className={classes.typ} >Menu</Typography>  
-            <IconButton>
-            <ChevronLeftIcon />
-            </IconButton>
-          </div>
-          <Divider />
          
-        </Drawer>
     </React.Fragment>    
   );
 }

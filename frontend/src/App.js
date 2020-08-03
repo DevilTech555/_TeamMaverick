@@ -1,6 +1,7 @@
 import React from 'react'
 import "./index.css";
 import SimpleAppBar from "./Components/AppBar";
+import Page from "./Components/Page";
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { makeStyles,ThemeProvider,createMuiTheme } from '@material-ui/core/styles';
 
@@ -49,10 +50,12 @@ export default function App() {
      <div className={classes.root}>
          <SimpleAppBar/>
       
-        <div className={classes.content}>
-       
-          </div>
-          </div> 
+         <main className={classes.content}>
+        <div className={classes.toolbar} />
+        <Page/>
+      </main>
+    </div>
+          
       </ThemeProvider>
     </React.Fragment>
   );
