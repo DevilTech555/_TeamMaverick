@@ -1,16 +1,44 @@
 import React, { Component } from 'react';
 import Chart from 'react-apexcharts';
+import socketIOClient from "socket.io-client";
+const ENDPOINT = "http://localhost:8080/";
 // import ApexCharts from 'apexcharts'
 export default class Line extends Component {
+
+   getter = async ()=>{
+      await fetch('http://localhost:5000/',{method:'GET'})
+      .then((res)=> res.json())
+      .then(async (doc)=>{
+         console.log(doc)
+         let newseries = []
+         let prediciton ={
+            name:'prediction',
+            data:[]
+          }
+          let demand = {
+            name:'demand',
+            data:[]
+          }
+          doc.data.map(element=>{
+          prediciton.data.push([element.timestamp,Math.round(element.yhat)]);
+          demand.data.push([element.timestamp],element.no_of_pass);
+       });
+        newseries.push(prediciton);
+        newseries.push(demand);
+        console.log(newseries);
+        this.setState({series:newseries},()=>{
+          console.log(this.state);
+        });
+
+      })
+      .catch((err)=> console.log(err))
+    }
     constructor(props) {
       super(props);
 
       this.state = {
       
-        series: [{
-          name: 'Likes',
-          data: [4, 3, 10, 9, 29, 19, 22, 9, 12, 7, 19, 5, 13, 9, 17, 2, 7, 5]
-        }],
+        series: [],
         options: {
           chart: {
             height: 350,
@@ -24,8 +52,7 @@ export default class Line extends Component {
               mode:'dark'
           },
           xaxis: {
-            type: 'datetime',
-            categories: ['1/11/2000', '2/11/2000', '3/11/2000', '4/11/2000', '5/11/2000', '6/11/2000', '7/11/2000', '8/11/2000', '9/11/2000', '10/11/2000', '11/11/2000', '12/11/2000', '1/11/2001', '2/11/2001', '3/11/2001','4/11/2001' ,'5/11/2001' ,'6/11/2001'],
+            type: 'datetime'
           },
           title: {
             text: 'Social Media',
@@ -66,21 +93,22 @@ export default class Line extends Component {
             },
           }
         },
-      
-      
-      };
+      };  
+      this.getter();
     }
 
-  
 
     render() {
       return (
         
 
   <div id="chart">
-<Chart options={this.state.options} series={this.state.series} type="line"  height={500}
-                    width={850} />
-</div>
+    {
+      this.state.series.length == 0?null:(
+        <Chart options={this.state.options} series={this.state.series} type="line"  height={500} width={850} />
+      )
+    }
+  </div>
       );
     }
 }
